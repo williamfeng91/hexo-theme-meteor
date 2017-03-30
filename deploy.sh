@@ -3,13 +3,16 @@
 vcs_type=$1
 username=$2
 project=$3
-branch=${4:-master}
+branch=$4
 
-if [ -z "$vcs_type" ] || [ -z "$username" ] || [ -z "$project" ]; then
-  echo "Need to pass at least three arguments to deploy:"
-  echo "  $0 <vcs_type> <username> <project> [branch]"
+if [ -z "$vcs_type" ] || \
+    [ -z "$username" ] || \
+    [ -z "$project" ] || \
+    [ -z "$branch" ]; then
+  echo "Need to pass FOUR arguments to deploy:"
+  echo "  $0 <vcs_type> <username> <project> <branch>"
   echo
-  echo "  Example: $0 github meteor docs"
+  echo "  Example: $0 github meteor docs master"
   exit 1
 fi
 
