@@ -8,4 +8,4 @@ deployment:
     branch: test-deploy
     owner: meteor
     commands:
-      - node deploy.sh github meteor docs master
+      - ./deploy.sh github meteor docs master
