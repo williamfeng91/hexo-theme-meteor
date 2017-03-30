@@ -1,0 +1,6 @@
+deployment:
+  meteor-docs:
+    branch: test-deploy
+    owner: meteor
+    commands:
+      - node deploy.sh github meteor docs master
