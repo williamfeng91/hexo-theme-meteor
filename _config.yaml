@@ -1,1 +1,7 @@
-config:
+logo:
+  nav_mobile: images/logo-bappo.svg
+  subbrand:
+  title: Bappo Components Docs
+  subtitle:
+  url: https://github.com/williamfeng91/bappo-components
+favicon: images/favicon.png
